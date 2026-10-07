@@ -11,16 +11,17 @@ export const dictionaries = {
       contact: "Contacto",
     },
     hero: {
-      brand: "ValersDev",
-      headline: "Ingeniero de software enfocado en backend",
-      support:
-        "Desde Les Franqueses del Vallès. Construyo sistemas sólidos y mantengo las cosas simples.",
+      name: "Víctor Valero",
+      handle: "ValersDev",
+      headline: "Ingeniero de Software",
       ctaContact: "Contactar",
       ctaWork: "Ver trabajo",
+      stackCore: "Lenguajes y datos",
+      stackInfra: "Infra",
     },
     about: {
       title: "Sobre mí",
-      body: "Soy ValersDev, ingeniero de software con foco en backend. Me interesa diseñar APIs claras, datos fiables y servicios que aguanten el día a día en producción. Este sitio es mi tarjeta de presentación: quién soy, dónde trabajo y en qué estoy.",
+      body: "Soy Víctor Valero, ingeniero de software con foco en backend. Me interesa diseñar APIs claras, datos fiables y servicios que aguanten el día a día en producción. Este sitio es mi tarjeta de presentación: quién soy, dónde trabajo y en qué estoy.",
     },
     background: {
       title: "Trayectoria",
@@ -60,16 +61,17 @@ export const dictionaries = {
       contact: "Contact",
     },
     hero: {
-      brand: "ValersDev",
-      headline: "Software engineer focused on backend",
-      support:
-        "Based in Les Franqueses del Vallès. I build solid systems and keep things simple.",
+      name: "Víctor Valero",
+      handle: "ValersDev",
+      headline: "Software Engineer",
       ctaContact: "Contact",
       ctaWork: "See work",
+      stackCore: "Languages & data",
+      stackInfra: "Infra",
     },
     about: {
       title: "About",
-      body: "I'm ValersDev, a software engineer focused on backend. I care about clear APIs, reliable data, and services that hold up in production. This site is my calling card: who I am, where I work, and what I'm building.",
+      body: "I'm Víctor Valero, a software engineer focused on backend. I care about clear APIs, reliable data, and services that hold up in production. This site is my calling card: who I am, where I work, and what I'm building.",
     },
     background: {
       title: "Background",

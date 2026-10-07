@@ -4,7 +4,7 @@ import { LanguageProvider } from "@/components/i18n/language-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ValersDev",
+  title: "Víctor Valero · ValersDev",
   description:
     "Ingeniero de software enfocado en backend. Les Franqueses del Vallès.",
 };

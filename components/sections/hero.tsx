@@ -1,53 +1,84 @@
 "use client";
 
 import { useLanguage } from "@/components/i18n/language-provider";
+import { stackGroups } from "@/lib/content/stack";
 
 export function Hero() {
   const { t } = useLanguage();
+  const [firstName, ...rest] = t.hero.name.split(" ");
+  const lastName = rest.join(" ");
+
+  const groupLabels = {
+    core: t.hero.stackCore,
+    infra: t.hero.stackInfra,
+  } as const;
 
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden px-5 pb-20 pt-16 sm:px-8 sm:pb-28 sm:pt-24"
+      className="hero relative flex min-h-[calc(100dvh-4.5rem)] flex-col justify-center overflow-hidden px-5 py-16 sm:px-8 sm:py-20"
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          background:
-            "radial-gradient(ellipse 80% 60% at 15% 20%, color-mix(in srgb, var(--lavender) 22%, transparent), transparent 55%), radial-gradient(ellipse 70% 50% at 85% 10%, color-mix(in srgb, var(--steel) 18%, transparent), transparent 50%)",
-        }}
-      />
+      <div aria-hidden className="hero-atmosphere pointer-events-none absolute inset-0 -z-10" />
 
-      <div className="mx-auto max-w-5xl">
-        <p className="font-[family-name:var(--font-display)] text-5xl font-semibold tracking-tight text-ink sm:text-6xl md:text-7xl">
-          {t.hero.brand}
-        </p>
-        <h1 className="mt-5 max-w-xl text-xl font-medium leading-snug text-ink sm:text-2xl">
-          {t.hero.headline}
-        </h1>
-        <p className="mt-4 max-w-lg text-base leading-relaxed text-muted sm:text-lg">
-          {t.hero.support}
-        </p>
-        <div className="mt-8 flex flex-wrap gap-3">
-          <a
-            href="#contacto"
-            className="inline-flex items-center justify-center rounded-md bg-ink px-5 py-2.5 text-sm font-medium text-paper transition-opacity hover:opacity-90"
-          >
-            {t.hero.ctaContact}
-          </a>
-          <a
-            href="#trabajo"
-            className="inline-flex items-center justify-center rounded-md border border-line bg-paper/60 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-lavender/50"
-          >
-            {t.hero.ctaWork}
-          </a>
+      <div className="hero-enter relative mx-auto grid w-full max-w-7xl gap-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(14rem,0.55fr)] lg:items-end lg:gap-16">
+        <div>
+          <h1 className="hero-name font-[family-name:var(--font-display)] text-[clamp(5.5rem,22vw,14rem)] font-semibold leading-[0.84] tracking-[-0.05em]">
+            <span className="hero-name-line hero-name-line--a block">
+              {firstName}
+            </span>
+            <span className="hero-name-line hero-name-line--b block">
+              {lastName}
+            </span>
+          </h1>
+
+          <div className="mt-8 flex flex-wrap items-baseline gap-x-3 gap-y-1 sm:mt-10">
+            <span className="font-[family-name:var(--font-mono)] text-sm text-lavender sm:text-base">
+              {t.hero.handle}
+            </span>
+            <span className="text-line" aria-hidden>
+              /
+            </span>
+            <span className="text-base font-medium text-ink sm:text-lg">
+              {t.hero.headline}
+            </span>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            <a
+              href="#contacto"
+              className="inline-flex items-center justify-center rounded-md bg-lavender px-6 py-3 text-sm font-medium text-paper transition-opacity hover:opacity-90"
+            >
+              {t.hero.ctaContact}
+            </a>
+            <a
+              href="#trabajo"
+              className="inline-flex items-center justify-center rounded-md border border-line px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-lavender/50"
+            >
+              {t.hero.ctaWork}
+            </a>
+          </div>
         </div>
-        <div
-          aria-hidden
-          className="mt-14 h-px w-24"
-          style={{ background: "var(--brand-gradient)" }}
-        />
+
+        <aside className="border-t border-line pt-8 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">
+          <ul className="flex flex-col gap-8">
+            {stackGroups.map((group) => (
+              <li key={group.id}>
+                <p className="font-[family-name:var(--font-mono)] text-xs text-muted">
+                  {groupLabels[group.id]}
+                </p>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {group.items.map((item) => (
+                    <li key={item}>
+                      <span className="inline-block cursor-default font-[family-name:var(--font-display)] text-xl font-medium tracking-tight text-ink transition-[color,transform] duration-200 ease-out hover:translate-x-1 hover:text-[#3ec4f0] sm:text-2xl motion-reduce:transition-colors motion-reduce:hover:translate-x-0">
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </aside>
       </div>
     </section>
   );
