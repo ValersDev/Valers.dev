@@ -120,6 +120,12 @@ body {
   background-image: linear-gradient(95deg, #9b7dff 0%, #5eb4e4 48%, #3ec4f0 100%);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .work-highlight:hover {
+    box-shadow: none !important;
+  }
+}
+
 .hero-enter > * {
   animation: hero-enter-item 700ms ease-out both;
 }
