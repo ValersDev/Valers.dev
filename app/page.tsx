@@ -1,3 +1,4 @@
+import { IntroBand } from "@/components/intro-band";
 import { SiteHeader } from "@/components/site-header";
 import { About } from "@/components/sections/about";
 import { Background } from "@/components/sections/background";
@@ -12,8 +13,10 @@ export default function Home() {
     <>
       <SiteHeader />
       <main className="flex-1">
-        <Hero />
-        <About />
+        <IntroBand>
+          <Hero />
+          <About />
+        </IntroBand>
         <Background />
         <Work />
         <Projects />

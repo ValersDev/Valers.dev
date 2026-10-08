@@ -21,7 +21,11 @@ export const dictionaries = {
     },
     about: {
       title: "Sobre mí",
-      body: "Soy Víctor Valero, ingeniero de software con foco en backend. Me interesa diseñar APIs claras, datos fiables y servicios que aguanten el día a día en producción. Este sitio es mi tarjeta de presentación: quién soy, dónde trabajo y en qué estoy.",
+      paragraphs: [
+        "Con 12 años ya tenía bastante claro que quería dedicarme a la informática. Empecé haciendo pequeñas cosas con Scratch y App Inventor, después llegaron algunos mods de Terraria y Minecraft, y con el tiempo acabé estudiando Ingeniería Informática en la UAB, especializado en ingeniería del software.",
+        "Durante la carrera hice prácticas de backend y, poco después, empecé a trabajar donde sigo actualmente. Desde entonces me he ido centrando cada vez más en backend y en hacer sistemas que sean fáciles de entender, que manejen bien los datos y que simplemente funcionen cuando toca.",
+        "Si buscas un perfil de backend o quieres hablar de un proyecto, escríbeme.",
+      ],
     },
     background: {
       title: "Trayectoria",
@@ -71,7 +75,11 @@ export const dictionaries = {
     },
     about: {
       title: "About",
-      body: "I'm Víctor Valero, a software engineer focused on backend. I care about clear APIs, reliable data, and services that hold up in production. This site is my calling card: who I am, where I work, and what I'm building.",
+      paragraphs: [
+        "By 12 I already knew I wanted to work in computing. I started with small Scratch and App Inventor projects, then some Terraria and Minecraft mods, and eventually studied Computer Engineering at UAB, specializing in software engineering.",
+        "During university I did a backend internship and, soon after, started at the company where I still work. Since then I've focused more and more on backend — building systems that are easy to understand, handle data well, and simply work when they need to.",
+        "If you're looking for a backend engineer or want to talk about a project, get in touch.",
+      ],
     },
     background: {
       title: "Background",

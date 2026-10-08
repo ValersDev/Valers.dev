@@ -66,20 +66,35 @@ body {
   outline-offset: 3px;
 }
 
-.hero-atmosphere {
+/* Nebula washes + sparse stars — galactic narrative for the intro */
+.intro-atmosphere {
   background:
+    radial-gradient(1.5px 1.5px at 12% 22%, rgb(236 232 242 / 0.55), transparent),
+    radial-gradient(1px 1px at 28% 8%, rgb(236 232 242 / 0.4), transparent),
+    radial-gradient(1.5px 1.5px at 48% 18%, rgb(196 166 239 / 0.45), transparent),
+    radial-gradient(1px 1px at 67% 6%, rgb(236 232 242 / 0.35), transparent),
+    radial-gradient(1.5px 1.5px at 82% 28%, rgb(110 184 224 / 0.5), transparent),
+    radial-gradient(1px 1px at 91% 14%, rgb(236 232 242 / 0.4), transparent),
+    radial-gradient(1px 1px at 18% 48%, rgb(236 232 242 / 0.3), transparent),
+    radial-gradient(1.5px 1.5px at 55% 42%, rgb(236 232 242 / 0.35), transparent),
+    radial-gradient(1px 1px at 73% 55%, rgb(196 166 239 / 0.35), transparent),
+    radial-gradient(1px 1px at 38% 68%, rgb(236 232 242 / 0.28), transparent),
+    radial-gradient(1.5px 1.5px at 88% 62%, rgb(110 184 224 / 0.35), transparent),
+    radial-gradient(1px 1px at 8% 78%, rgb(236 232 242 / 0.25), transparent),
+    radial-gradient(1px 1px at 44% 88%, rgb(236 232 242 / 0.3), transparent),
+    radial-gradient(1.5px 1.5px at 62% 82%, rgb(196 166 239 / 0.3), transparent),
     radial-gradient(
-      ellipse 55% 50% at 8% 35%,
-      color-mix(in srgb, #c4a6ef 38%, transparent),
+      ellipse 55% 45% at 8% 18%,
+      color-mix(in srgb, #c4a6ef 40%, transparent),
       transparent 70%
     ),
     radial-gradient(
-      ellipse 45% 40% at 92% 18%,
-      color-mix(in srgb, #4aa8d8 30%, transparent),
+      ellipse 45% 35% at 92% 12%,
+      color-mix(in srgb, #4aa8d8 32%, transparent),
       transparent 65%
     ),
     radial-gradient(
-      ellipse 40% 35% at 70% 85%,
+      ellipse 50% 40% at 75% 72%,
       color-mix(in srgb, #8b6cc9 16%, transparent),
       transparent 70%
     );

@@ -16,10 +16,8 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="hero relative flex min-h-[calc(100dvh-4.5rem)] flex-col justify-center overflow-hidden px-5 py-16 sm:px-8 sm:py-20"
+      className="hero relative flex min-h-[calc(100dvh-4.5rem)] flex-col justify-center px-5 py-16 sm:px-8 sm:py-20"
     >
-      <div aria-hidden className="hero-atmosphere pointer-events-none absolute inset-0 -z-10" />
-
       <div className="hero-enter relative mx-auto grid w-full max-w-7xl gap-14 lg:grid-cols-[minmax(0,1.2fr)_minmax(14rem,0.55fr)] lg:items-end lg:gap-16">
         <div>
           <h1 className="hero-name font-[family-name:var(--font-display)] text-[clamp(5.5rem,22vw,14rem)] font-semibold leading-[0.84] tracking-[-0.05em]">
