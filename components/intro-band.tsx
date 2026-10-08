@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-/** Shared nebula wash behind hero + about (galactic narrative). */
+/** Full-page nebula wash (galactic narrative). */
 export function IntroBand({ children }: { children: ReactNode }) {
   return (
     <div className="relative isolate">

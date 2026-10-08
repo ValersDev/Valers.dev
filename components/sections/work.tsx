@@ -8,7 +8,7 @@ export function Work() {
   return (
     <section
       id="trabajo"
-      className="relative scroll-mt-20 border-t border-line px-5 py-20 sm:px-8 sm:py-28"
+      className="relative scroll-mt-20 px-5 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto max-w-7xl">
         <header className="max-w-xl">

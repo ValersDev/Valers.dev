@@ -16,14 +16,14 @@ export default function Home() {
         <IntroBand>
           <Hero />
           <About />
+          <Background />
+          <Work />
+          <Projects />
+          <University />
+          <Contact />
         </IntroBand>
-        <Background />
-        <Work />
-        <Projects />
-        <University />
-        <Contact />
       </main>
-      <footer className="border-t border-line px-5 py-6 sm:px-8">
+      <footer className="px-5 py-6 sm:px-8">
         <div className="mx-auto max-w-5xl font-[family-name:var(--font-mono)] text-xs text-muted">
           ValersDev
         </div>

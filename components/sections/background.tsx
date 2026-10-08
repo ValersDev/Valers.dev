@@ -8,7 +8,7 @@ export function Background() {
   return (
     <section
       id="trayectoria"
-      className="relative scroll-mt-20 border-t border-line px-5 py-20 sm:px-8 sm:py-28"
+      className="relative scroll-mt-20 px-5 py-20 sm:px-8 sm:py-28"
     >
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[minmax(12rem,0.32fr)_minmax(0,1fr)] lg:items-start lg:gap-16">
         <div className="lg:sticky lg:top-28">
