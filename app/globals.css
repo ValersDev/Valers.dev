@@ -8,6 +8,8 @@
   --lavender: #c4a6ef;
   --steel: #6eb8e0;
   --line: #2c2836;
+  --status-ongoing: #e0c36a;
+  --status-done: #6fbf8a;
   --brand-gradient: linear-gradient(
     90deg,
     #e0b0ff 0%,
@@ -27,6 +29,8 @@
   --color-lavender: var(--lavender);
   --color-steel: var(--steel);
   --color-line: var(--line);
+  --color-status-ongoing: var(--status-ongoing);
+  --color-status-done: var(--status-done);
   --font-sans: var(--font-body);
   --font-display: var(--font-display);
   --font-mono: var(--font-mono);
@@ -142,6 +146,42 @@ body {
   .work-highlight:hover {
     box-shadow: none !important;
   }
+}
+
+.status-dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.status-dot--ongoing,
+.status-label--ongoing {
+  color: var(--status-ongoing);
+}
+
+.status-dot--ongoing {
+  background: var(--status-ongoing);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--status-ongoing) 45%, transparent);
+}
+
+.status-dot--done,
+.status-label--done {
+  color: var(--status-done);
+}
+
+.status-dot--done {
+  background: var(--status-done);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--status-done) 40%, transparent);
+}
+
+.project-card--ongoing {
+  border-top: 2px solid var(--status-ongoing);
+}
+
+.project-card--done {
+  border-top: 2px solid var(--status-done);
 }
 
 .hero-enter > * {

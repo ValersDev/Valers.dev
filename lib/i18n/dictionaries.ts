@@ -109,8 +109,32 @@ export const dictionaries = {
     },
     projects: {
       title: "Proyectos",
-      intro: "Proyectos personales en los que estoy trabajando o que quiero mostrar.",
-      placeholder: "Contenido próximamente.",
+      statusOngoing: "En curso",
+      statusDone: "Finalizado",
+      viewRepo: "Ver en GitHub",
+      items: {
+        lobbycall: {
+          name: "LobbyCall",
+          summary:
+            "Bot de Discord para organizar partidas sin el caos del chat de grupo: abres un lobby, la gente vota el modo y se cierra el plan.",
+          highlights: [
+            "Slash commands (/planificar, /cerrar) y botones de voto en vivo",
+            "Un lobby abierto por canal, tallies concurrentes con mutex",
+            "Arquitectura handler → service → storage en Go",
+            "Listo para Docker / Compose",
+          ],
+        },
+        valersdev: {
+          name: "valers.dev",
+          summary:
+            "Mi portfolio personal en español e inglés: quién soy, mi trayectoria y en qué trabajo.",
+          highlights: [
+            "Next.js + TypeScript + Tailwind",
+            "Contenido bilingüe ES / EN",
+            "Diseño e implementación propios",
+          ],
+        },
+      },
     },
     university: {
       title: "Universidad",
@@ -235,8 +259,32 @@ export const dictionaries = {
     },
     projects: {
       title: "Projects",
-      intro: "Personal projects I'm working on or want to show.",
-      placeholder: "Coming soon.",
+      statusOngoing: "In progress",
+      statusDone: "Finished",
+      viewRepo: "View on GitHub",
+      items: {
+        lobbycall: {
+          name: "LobbyCall",
+          summary:
+            "A Discord lobby bot for scheduling game nights without group-chat chaos: open a lobby, vote the mode, lock the plan.",
+          highlights: [
+            "Slash commands (/planificar, /cerrar) and live vote buttons",
+            "One open lobby per channel, mutex-safe concurrent tallies",
+            "Handler → service → storage layout in Go",
+            "Docker / Compose ready",
+          ],
+        },
+        valersdev: {
+          name: "valers.dev",
+          summary:
+            "My personal portfolio in Spanish and English: who I am, my path, and what I work on.",
+          highlights: [
+            "Next.js + TypeScript + Tailwind",
+            "Bilingual ES / EN content",
+            "Design and build by me",
+          ],
+        },
+      },
     },
     university: {
       title: "University",
