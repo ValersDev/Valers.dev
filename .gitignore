@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# local scratch (e.g. downloaded papers)
+.tmp/
+
 # next.js
 /.next/
 /out/

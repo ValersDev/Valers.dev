@@ -138,8 +138,68 @@ export const dictionaries = {
     },
     university: {
       title: "Universidad",
-      intro: "Mención breve a proyectos universitarios.",
-      placeholder: "Listado próximamente.",
+      gradeLabel: "Nota",
+      viewRepo: "Ver en GitHub",
+      privateRepo: "Repo privado (proyecto en equipo)",
+      items: {
+        tfg: {
+          name: "TFG · Snake + Reinforcement Learning",
+          course: "Treball de Fi de Grau · UAB",
+          summary:
+            "Implementé el juego Snake en Pygame (con tests al ~99% de cobertura) y un agente de Deep Q-Learning en PyTorch que aprende a jugarlo. Entrenamiento con política ε-greedy durante 10.000 episodios; mejoran puntuación media y máxima, aunque el agente aún tiene margen de mejora en evaluación.",
+          highlights: [
+            "Tests unitarios con Coverage.py e informe HTML (~99% de cobertura)",
+            "Arquitectura: Linear_QNet, QTrainer, Agent y Evaluator; bucles humano / IA separados",
+            "Replay buffer de 100.000 transiciones; entrenamiento a corto y largo plazo",
+            "Hiperparámetros DQN: α 0,001 · γ 0,9 · decaimiento ε 0,995 (mín. 0,01)",
+            "Análisis por bloques de 200 episodios en Excel (media, máx., mediana, CV…)",
+            "Pico de 40 puntos en entrenamiento; el evaluador se rediseñó con el tutor",
+          ],
+        },
+        weout: {
+          name: "WeOut",
+          course: "Laboratorio de Software Integrado",
+          summary:
+            "App de red social para crear y unirse a planes. Equipo de 8: estuve en el subgrupo de frontend e integré front y back.",
+          highlights: [
+            "Frontend en Kotlin + Jetpack Compose",
+            "Backend en PHP y MariaDB, servidor en la universidad",
+            "Nota final: 10",
+          ],
+        },
+        traintracker: {
+          name: "TrainTracker",
+          course: "Sistemas Multimedia",
+          summary:
+            "App Android de seguimiento deportivo con arquitectura MVVM. Parte de las métricas (calorías, ritmo cardíaco, hidratación) no se cerró por no poder obtener Google OAuth.",
+          highlights: [
+            "Firebase Auth, Fitness, Maps, AccuWeather y más APIs de Google Cloud",
+            "Kotlin + Jetpack Compose",
+            "Nota final: 9.5",
+          ],
+        },
+        replicube: {
+          name: "RepliCube",
+          course: "Robótica, Lenguaje y Planificación",
+          summary:
+            "Robot capaz de resolver y replicar patrones de un cubo de Rubik.",
+          highlights: [
+            "Proyecto de robótica y planificación",
+            "Nota final: 7.2",
+          ],
+        },
+        islegendary: {
+          name: "isLegendary?",
+          course: "Aprendizaje Computacional · nov. – dic. 2023",
+          summary:
+            "Caso Kaggle con el dataset de Pokémon: entrené dos modelos para identificar a los verdaderos legendarios a partir de sus atributos.",
+          highlights: [
+            "K-Means y Bayesian Gaussian Mixture",
+            "Jupyter Notebook + informe",
+            "Nota final: 7",
+          ],
+        },
+      },
     },
     contact: {
       title: "Contacto",
@@ -288,8 +348,68 @@ export const dictionaries = {
     },
     university: {
       title: "University",
-      intro: "A light mention of university projects.",
-      placeholder: "List coming soon.",
+      gradeLabel: "Grade",
+      viewRepo: "View on GitHub",
+      privateRepo: "Private repo (team project)",
+      items: {
+        tfg: {
+          name: "Final thesis · Snake + Reinforcement Learning",
+          course: "Bachelor's thesis · UAB",
+          summary:
+            "I built Snake in Pygame (tests at ~99% coverage) and a Deep Q-Learning agent in PyTorch that learns to play it. Training used an ε-greedy policy over 10,000 episodes — average and max scores improved, though the agent still has room to grow at evaluation time.",
+          highlights: [
+            "Unit tests with Coverage.py and an HTML report (~99% coverage)",
+            "Architecture: Linear_QNet, QTrainer, Agent, Evaluator; separate human / AI loops",
+            "100k transition replay buffer; short- and long-term training steps",
+            "DQN hyperparameters: α 0.001 · γ 0.9 · ε decay 0.995 (min 0.01)",
+            "Results analyzed in 200-episode Excel batches (mean, max, median, CV…)",
+            "Peak score of 40 in training; evaluator redesigned with the tutor",
+          ],
+        },
+        weout: {
+          name: "WeOut",
+          course: "Integrated Software Laboratory",
+          summary:
+            "Social app for creating and joining plans. Team of 8: I was on the frontend subgroup and worked on front–back integration.",
+          highlights: [
+            "Frontend in Kotlin + Jetpack Compose",
+            "Backend in PHP and MariaDB on the university server",
+            "Final grade: 10",
+          ],
+        },
+        traintracker: {
+          name: "TrainTracker",
+          course: "Multimedia Systems",
+          summary:
+            "Android sports-tracking app with an MVVM structure. Some metrics (calories, heart rate, hydration) weren't finished — we couldn't get Google OAuth.",
+          highlights: [
+            "Firebase Auth, Fitness, Maps, AccuWeather and other Google Cloud APIs",
+            "Kotlin + Jetpack Compose",
+            "Final grade: 9.5",
+          ],
+        },
+        replicube: {
+          name: "RepliCube",
+          course: "Robotics, Language and Planning",
+          summary:
+            "A robot that solves and replicates Rubik's Cube patterns.",
+          highlights: [
+            "Robotics and planning project",
+            "Final grade: 7.2",
+          ],
+        },
+        islegendary: {
+          name: "isLegendary?",
+          course: "Computational Learning · Nov – Dec 2023",
+          summary:
+            "Kaggle-style case on the Pokémon dataset: I trained two models to find the true legendaries from their attributes.",
+          highlights: [
+            "K-Means and Bayesian Gaussian Mixture",
+            "Jupyter Notebook + report",
+            "Final grade: 7",
+          ],
+        },
+      },
     },
     contact: {
       title: "Contact",
