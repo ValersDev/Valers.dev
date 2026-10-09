@@ -1,4 +1,5 @@
 import { IntroBand } from "@/components/intro-band";
+import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { About } from "@/components/sections/about";
 import { Background } from "@/components/sections/background";
@@ -21,13 +22,9 @@ export default function Home() {
           <Projects />
           <University />
           <Contact />
+          <SiteFooter />
         </IntroBand>
       </main>
-      <footer className="px-5 py-6 sm:px-8">
-        <div className="mx-auto max-w-5xl font-[family-name:var(--font-mono)] text-xs text-muted">
-          ValersDev
-        </div>
-      </footer>
     </>
   );
 }

@@ -71,28 +71,28 @@ body {
 }
 
 /*
-  Galactic sky: same nebula + star recipe as the hero intro.
-  Fixed to the viewport so the field stays continuous while content scrolls.
+  Galactic sky: nebula wash + faint static dust.
+  Bright twinkles are real .intro-star dots on a fixed layer.
 */
 .intro-atmosphere {
   background:
-    radial-gradient(1.5px 1.5px at 12% 22%, rgb(236 232 242 / 0.55), transparent),
-    radial-gradient(1px 1px at 28% 8%, rgb(236 232 242 / 0.4), transparent),
-    radial-gradient(1.5px 1.5px at 48% 18%, rgb(196 166 239 / 0.45), transparent),
-    radial-gradient(1px 1px at 67% 6%, rgb(236 232 242 / 0.35), transparent),
-    radial-gradient(1.5px 1.5px at 82% 28%, rgb(110 184 224 / 0.5), transparent),
-    radial-gradient(1px 1px at 91% 14%, rgb(236 232 242 / 0.4), transparent),
-    radial-gradient(1px 1px at 18% 48%, rgb(236 232 242 / 0.3), transparent),
-    radial-gradient(1.5px 1.5px at 55% 42%, rgb(236 232 242 / 0.35), transparent),
-    radial-gradient(1px 1px at 73% 55%, rgb(196 166 239 / 0.35), transparent),
-    radial-gradient(1px 1px at 38% 68%, rgb(236 232 242 / 0.28), transparent),
-    radial-gradient(1.5px 1.5px at 88% 62%, rgb(110 184 224 / 0.35), transparent),
-    radial-gradient(1px 1px at 8% 78%, rgb(236 232 242 / 0.25), transparent),
-    radial-gradient(1px 1px at 44% 88%, rgb(236 232 242 / 0.3), transparent),
-    radial-gradient(1.5px 1.5px at 62% 82%, rgb(196 166 239 / 0.3), transparent),
-    radial-gradient(1px 1px at 6% 35%, rgb(236 232 242 / 0.28), transparent),
-    radial-gradient(1.5px 1.5px at 95% 45%, rgb(110 184 224 / 0.32), transparent),
-    radial-gradient(1px 1px at 50% 72%, rgb(236 232 242 / 0.26), transparent),
+    radial-gradient(1px 1px at 12% 22%, rgb(236 232 242 / 0.35), transparent),
+    radial-gradient(1px 1px at 28% 8%, rgb(236 232 242 / 0.28), transparent),
+    radial-gradient(1px 1px at 48% 18%, rgb(196 166 239 / 0.3), transparent),
+    radial-gradient(1px 1px at 67% 6%, rgb(236 232 242 / 0.25), transparent),
+    radial-gradient(1px 1px at 82% 28%, rgb(110 184 224 / 0.3), transparent),
+    radial-gradient(1px 1px at 91% 14%, rgb(236 232 242 / 0.28), transparent),
+    radial-gradient(1px 1px at 18% 48%, rgb(236 232 242 / 0.22), transparent),
+    radial-gradient(1px 1px at 55% 42%, rgb(236 232 242 / 0.25), transparent),
+    radial-gradient(1px 1px at 73% 55%, rgb(196 166 239 / 0.22), transparent),
+    radial-gradient(1px 1px at 38% 68%, rgb(236 232 242 / 0.2), transparent),
+    radial-gradient(1px 1px at 88% 62%, rgb(110 184 224 / 0.22), transparent),
+    radial-gradient(1px 1px at 8% 78%, rgb(236 232 242 / 0.2), transparent),
+    radial-gradient(1px 1px at 44% 88%, rgb(236 232 242 / 0.22), transparent),
+    radial-gradient(1px 1px at 62% 82%, rgb(196 166 239 / 0.2), transparent),
+    radial-gradient(1px 1px at 6% 35%, rgb(236 232 242 / 0.2), transparent),
+    radial-gradient(1px 1px at 95% 45%, rgb(110 184 224 / 0.22), transparent),
+    radial-gradient(1px 1px at 50% 72%, rgb(236 232 242 / 0.18), transparent),
     radial-gradient(
       ellipse 55% 45% at 8% 18%,
       color-mix(in srgb, #c4a6ef 40%, transparent),
@@ -116,9 +116,54 @@ body {
   background-color: var(--paper);
 }
 
-@media (min-width: 768px) {
-  .intro-atmosphere {
-    background-attachment: fixed;
+.intro-star {
+  position: absolute;
+  border-radius: 9999px;
+  background: #fff;
+  box-shadow:
+    0 0 4px 1px rgb(236 232 242 / 0.9),
+    0 0 10px 2px rgb(196 166 239 / 0.55),
+    0 0 18px 4px rgb(110 184 224 / 0.25);
+  opacity: 0.2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro-star {
+    animation-name: star-twinkle;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes star-twinkle {
+  0%,
+  100% {
+    opacity: 0.12;
+    transform: scale(0.7);
+    box-shadow:
+      0 0 2px 0 rgb(236 232 242 / 0.4),
+      0 0 4px 1px rgb(196 166 239 / 0.15);
+  }
+  45% {
+    opacity: 1;
+    transform: scale(1.35);
+    box-shadow:
+      0 0 6px 2px rgb(236 232 242 / 1),
+      0 0 14px 4px rgb(196 166 239 / 0.7),
+      0 0 22px 6px rgb(62 196 240 / 0.35);
+  }
+  70% {
+    opacity: 0.35;
+    transform: scale(0.9);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-star {
+    opacity: 0.75;
+    box-shadow:
+      0 0 4px 1px rgb(236 232 242 / 0.85),
+      0 0 10px 2px rgb(196 166 239 / 0.45);
   }
 }
 
@@ -142,9 +187,37 @@ body {
   background-image: linear-gradient(95deg, #9b7dff 0%, #5eb4e4 48%, #3ec4f0 100%);
 }
 
+.stack-item {
+  position: relative;
+  display: inline-block;
+  padding-left: 0.75rem;
+}
+
+.stack-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  bottom: 0.2em;
+  width: 2px;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, #c4a6ef 0%, #3ec4f0 100%);
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 200ms ease-out;
+}
+
+.stack-item:hover::before {
+  transform: scaleY(1);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .work-highlight:hover {
     box-shadow: none !important;
+  }
+
+  .stack-item:hover::before {
+    transform: scaleY(1);
   }
 }
 

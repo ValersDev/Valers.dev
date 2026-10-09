@@ -1,20 +1,40 @@
-export const contactLinks = {
-  email: {
-    href: "mailto:hello@valers.dev",
-    labelKey: "email" as const,
+export const contactLinks = [
+  {
+    id: "email" as const,
+    href: "mailto:victorvalerocarrasco@gmail.com",
+    handle: "victorvalerocarrasco@gmail.com",
+    external: false,
   },
-  linkedin: {
-    href: "https://www.linkedin.com/in/placeholder",
-    labelKey: "linkedin" as const,
+  {
+    id: "linkedin" as const,
+    href: "https://www.linkedin.com/in/victorvalerocarrasco",
+    handle: "victorvalerocarrasco",
+    external: true,
   },
-  github: {
-    href: "https://github.com/placeholder",
-    labelKey: "github" as const,
+  {
+    id: "github" as const,
+    href: "https://github.com/ValersDev",
+    handle: "ValersDev",
+    external: true,
   },
-  whatsapp: {
-    href: "https://wa.me/34000000000",
-    labelKey: "whatsapp" as const,
+  {
+    id: "whatsapp" as const,
+    href: "https://wa.me/34639387089",
+    handle: "+34 639 387 089",
+    external: true,
   },
-} as const;
+  {
+    id: "tiktok" as const,
+    href: "https://www.tiktok.com/@valersdev",
+    handle: "@valersdev",
+    external: true,
+  },
+  {
+    id: "instagram" as const,
+    href: "https://www.instagram.com/valers.dev",
+    handle: "valers.dev",
+    external: true,
+  },
+] as const;
 
-export type ContactKey = keyof typeof contactLinks;
+export type ContactId = (typeof contactLinks)[number]["id"];

@@ -14,6 +14,8 @@ export const dictionaries = {
       name: "Víctor Valero",
       handle: "ValersDev",
       headline: "Ingeniero de Software",
+      tagline: "Backend, datos y sistemas que se entienden.",
+      location: "Les Franqueses · BCN",
       ctaContact: "Contactar",
       ctaWork: "Ver trabajo",
       stackCore: "Lenguajes y datos",
@@ -204,11 +206,17 @@ export const dictionaries = {
     contact: {
       title: "Contacto",
       intro:
-        "Si eres reclutador o quieres colaborar, escríbeme por el canal que te venga mejor.",
+        "Reclutadores, colaboraciones o simplemente charlar de código: elige el canal que te venga mejor.",
       email: "Email",
       linkedin: "LinkedIn",
       github: "GitHub",
       whatsapp: "WhatsApp",
+      tiktok: "TikTok",
+      instagram: "Instagram",
+    },
+    footer: {
+      location: "Les Franqueses del Vallès · Barcelona",
+      note: "Backend, datos y sistemas que se entienden.",
     },
   },
   en: {
@@ -224,6 +232,8 @@ export const dictionaries = {
       name: "Víctor Valero",
       handle: "ValersDev",
       headline: "Software Engineer",
+      tagline: "Backend, data, and systems that make sense.",
+      location: "Les Franqueses · BCN",
       ctaContact: "Contact",
       ctaWork: "See work",
       stackCore: "Languages & data",
@@ -414,11 +424,17 @@ export const dictionaries = {
     contact: {
       title: "Contact",
       intro:
-        "If you're hiring or want to collaborate, reach out on whichever channel works for you.",
+        "Hiring, collaborations, or just talking code — pick whichever channel works for you.",
       email: "Email",
       linkedin: "LinkedIn",
       github: "GitHub",
       whatsapp: "WhatsApp",
+      tiktok: "TikTok",
+      instagram: "Instagram",
+    },
+    footer: {
+      location: "Les Franqueses del Vallès · Barcelona",
+      note: "Backend, data, and systems that make sense.",
     },
   },
 } as const;

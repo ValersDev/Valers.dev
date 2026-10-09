@@ -41,6 +41,14 @@ export function Hero() {
             </span>
           </div>
 
+          <p className="mt-2 font-[family-name:var(--font-mono)] text-xs tracking-wide text-muted">
+            {t.hero.location}
+          </p>
+
+          <p className="mt-4 max-w-md text-base leading-relaxed text-muted sm:text-[1.05rem]">
+            {t.hero.tagline}
+          </p>
+
           <div className="mt-10 flex flex-wrap gap-3">
             <a
               href="#contacto"
@@ -64,10 +72,10 @@ export function Hero() {
                 <p className="font-[family-name:var(--font-mono)] text-xs text-muted">
                   {groupLabels[group.id]}
                 </p>
-                <ul className="mt-3 flex flex-col gap-2">
+                <ul className="mt-3 flex flex-col gap-1">
                   {group.items.map((item) => (
                     <li key={item}>
-                      <span className="inline-block cursor-default font-[family-name:var(--font-display)] text-xl font-medium tracking-tight text-ink transition-[color,transform] duration-200 ease-out hover:translate-x-1 hover:text-[#3ec4f0] sm:text-2xl motion-reduce:transition-colors motion-reduce:hover:translate-x-0">
+                      <span className="stack-item cursor-default font-[family-name:var(--font-display)] text-xl font-medium tracking-tight text-ink transition-[color,transform] duration-200 ease-out hover:translate-x-1 hover:text-[#3ec4f0] sm:text-2xl motion-reduce:transition-colors motion-reduce:hover:translate-x-0">
                         {item}
                       </span>
                     </li>
