@@ -84,7 +84,7 @@ export const dictionaries = {
           company: "Babel",
           role: "Backend software engineer (prácticas)",
           summary:
-            "Bootcamp de Java y Spring Boot — clean code, arquitectura y Scrum — y trabajo real en equipo.",
+            "Bootcamp de Java y Spring Boot (clean code, arquitectura y Scrum) y trabajo real en equipo.",
           highlights: [
             "Proyecto final: API en un equipo backend junto a un equipo frontend",
             "Proyectos internos de la empresa y proceso de entrevistas para proyectos externos",
@@ -243,7 +243,7 @@ export const dictionaries = {
       title: "About",
       paragraphs: [
         "By 12 I already knew I wanted to work in computing. I started with small Scratch and App Inventor projects, then some Terraria and Minecraft mods, and eventually studied Computer Engineering at UAB, specializing in software engineering.",
-        "During university I did a backend internship and, soon after, started at the company where I still work. Since then I've focused more and more on backend — building systems that are easy to understand, handle data well, and simply work when they need to.",
+        "During university I did a backend internship and, soon after, started at the company where I still work. Since then I've focused more and more on backend: systems that are easy to understand, handle data well, and simply work when they need to.",
         "If you're looking for a backend engineer or want to talk about a project, get in touch.",
       ],
     },
@@ -302,7 +302,7 @@ export const dictionaries = {
           company: "Babel",
           role: "Backend software engineer (internship)",
           summary:
-            "Java and Spring Boot bootcamp — clean code, architecture, and Scrum — plus real team delivery.",
+            "Java and Spring Boot bootcamp (clean code, architecture, and Scrum), plus real team delivery.",
           highlights: [
             "Final project: API on a backend team paired with a frontend team",
             "Internal company projects and interview process for external placements",
@@ -366,7 +366,7 @@ export const dictionaries = {
           name: "Final thesis · Snake + Reinforcement Learning",
           course: "Bachelor's thesis · UAB",
           summary:
-            "I built Snake in Pygame (tests at ~99% coverage) and a Deep Q-Learning agent in PyTorch that learns to play it. Training used an ε-greedy policy over 10,000 episodes — average and max scores improved, though the agent still has room to grow at evaluation time.",
+            "I built Snake in Pygame (tests at ~99% coverage) and a Deep Q-Learning agent in PyTorch that learns to play it. Training used an ε-greedy policy over 10,000 episodes. Average and max scores improved, though the agent still has room to grow at evaluation time.",
           highlights: [
             "Unit tests with Coverage.py and an HTML report (~99% coverage)",
             "Architecture: Linear_QNet, QTrainer, Agent, Evaluator; separate human / AI loops",
@@ -380,7 +380,7 @@ export const dictionaries = {
           name: "WeOut",
           course: "Integrated Software Laboratory",
           summary:
-            "Social app for creating and joining plans. Team of 8: I was on the frontend subgroup and worked on front–back integration.",
+            "Social app for creating and joining plans. Team of 8: I was on the frontend subgroup and worked on front/back integration.",
           highlights: [
             "Frontend in Kotlin + Jetpack Compose",
             "Backend in PHP and MariaDB on the university server",
@@ -391,7 +391,7 @@ export const dictionaries = {
           name: "TrainTracker",
           course: "Multimedia Systems",
           summary:
-            "Android sports-tracking app with an MVVM structure. Some metrics (calories, heart rate, hydration) weren't finished — we couldn't get Google OAuth.",
+            "Android sports-tracking app with an MVVM structure. Some metrics (calories, heart rate, hydration) weren't finished because we couldn't get Google OAuth.",
           highlights: [
             "Firebase Auth, Fitness, Maps, AccuWeather and other Google Cloud APIs",
             "Kotlin + Jetpack Compose",
@@ -424,7 +424,7 @@ export const dictionaries = {
     contact: {
       title: "Contact",
       intro:
-        "Hiring, collaborations, or just talking code — pick whichever channel works for you.",
+        "Hiring, collaborations, or just talking code: pick whichever channel works for you.",
       email: "Email",
       linkedin: "LinkedIn",
       github: "GitHub",
